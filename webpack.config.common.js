@@ -27,6 +27,13 @@ module.exports = {
     })
   ],
   module: {
+    preLoaders: [
+      {
+        test: /\.js$/,
+        include: path.join(__dirname, 'src'),
+        loaders: ['eslint']
+      }
+    ],
     loaders: [
       {
         test: /\.js$/,

@@ -13,6 +13,7 @@ A simple angular (1.x) webpack boilerplate without a lot of the cruft of other b
  - Note: hot reloading _does_ work for CSS! (but not JS due to some issues in Angular 1.x source code. See [this issue][issue])
 1. image loading via `url-loader` (and `file-loader` if over 10k)
 1. a local fileserver for rapid development via `webpack-dev-server` (with hot-reloads for some things!)
+1. linting support via `eslint` and `eslint-loader`
 
 ## Usage
 
