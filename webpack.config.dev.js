@@ -1,7 +1,4 @@
 const webpack = require('webpack');
-const path = require('path');
-
-const WebpackHtmlPlugin = require('webpack-html-plugin');
 
 process.env.NODE_ENV = 'development';
 
@@ -16,4 +13,4 @@ module.exports = {
     }),
     new webpack.HotModuleReplacementPlugin()
   ]
-}
+};

@@ -7,7 +7,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     vendor: Object.keys(pkg.dependencies), // note, angular dependencies have to come first
-    [pkg.name]: './src/index'
+    app: './src/index'
   },
   output: {
     filename: '[name].js',
