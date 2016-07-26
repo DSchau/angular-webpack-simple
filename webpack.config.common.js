@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const pkg = require(path.resolve('./package.json'));
 
-const WebpackHtmlPlugin = require('webpack-html-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -15,7 +15,8 @@ module.exports = {
     publicPath: '/'
   },
   plugins: [
-    new WebpackHtmlPlugin({
+    new HtmlWebpackPlugin({
+      chunksSortMode: 'dependency',
       inject: true,
       template: 'src/index.html'
     }),
