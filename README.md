@@ -1,4 +1,4 @@
-# angular-simple-webpack-boilerplate
+# angular-webpack-simple
 
 A simple angular (1.x) webpack boilerplate without a lot of the cruft of other boilerplates.
 
