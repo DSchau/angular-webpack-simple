@@ -10,7 +10,6 @@ module.exports = {
       'process.env.NODE_ENV': JSON.stringify('development'),
       __DEV__: true,
       __PROD__: false
-    }),
-    new webpack.HotModuleReplacementPlugin()
+    })
   ]
 };
