@@ -1,0 +1,21 @@
+{
+  "presets": [
+    "es2015-webpack"
+  ],
+  "env": {
+    "development": {
+
+    },
+    "production": {
+
+    }
+  },
+  "plugins": [
+    [
+      "angularjs-annotate", {
+        "explicitOnly" : true
+      }
+    ],
+    "transform-object-assign"
+  ]
+}

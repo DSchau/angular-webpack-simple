@@ -1,0 +1,42 @@
+{
+  "name": "angular-simple-webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "A 'boilerplate' for angular 1 + webpack",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "webpack",
+    "clean": "rimraf dist",
+    "deploy": "npm run build -- --env.prod true",
+    "start": "webpack-dev-server --port 8001 --no-info --open --hot"
+  },
+  "keywords": [
+    "angular",
+    "webpack"
+  ],
+  "author": "Dustin Schau <dustinschau@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-loader": "^6.2.4",
+    "babel-plugin-angularjs-annotate": "^0.4.0",
+    "babel-plugin-transform-object-assign": "^6.8.0",
+    "babel-preset-es2015-webpack": "^6.4.2",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta.3",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.3",
+    "rimraf": "^2.5.4",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.1.0-beta.20",
+    "webpack-dev-server": "^2.1.0-beta.0",
+    "webpack-html-plugin": "^0.1.1",
+    "webpack-md5-hash": "0.0.5",
+    "webpack-merge": "^0.14.1"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^1.0.0-beta.1",
+    "normalize.css": "^4.2.0"
+  }
+}
