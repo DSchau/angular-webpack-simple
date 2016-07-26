@@ -1,7 +1,7 @@
 {
-  "name": "angular-simple-webpack-boilerplate",
+  "name": "angular-webpack-simple",
   "version": "1.0.0",
-  "description": "A 'boilerplate' for angular 1 + webpack",
+  "description": "A simple 'boilerplate' for angular 1 + webpack",
   "main": "dist/index.js",
   "scripts": {
     "prebuild": "npm run clean",
@@ -17,7 +17,7 @@
   "author": "Dustin Schau <dustinschau@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DSchau/angular-simple-webpack-boilerplate"
+    "url": "https://github.com/DSchau/angular-webpack-simple"
   },
   "license": "MIT",
   "devDependencies": {

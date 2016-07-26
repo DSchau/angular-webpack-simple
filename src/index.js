@@ -4,7 +4,7 @@ import uiRouter from 'angular-ui-router';
 import appModule from './app/';
 import helloModule from './hello/';
 
-const app = angular.module('angularWebpackDemo', [
+const app = angular.module('angularWebpack', [
   uiRouter,
   appModule.name,
   helloModule.name

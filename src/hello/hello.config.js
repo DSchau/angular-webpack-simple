@@ -1,6 +1,6 @@
 export function helloConfig($stateProvider) {
   'ngInject';
-  $stateProvider.state('angularWebpackDemo.hello', {
+  $stateProvider.state('angularWebpack.hello', {
     url: '/hello',
     template: '<hello></hello>'
   });
