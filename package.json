@@ -17,6 +17,7 @@
   "author": "Dustin Schau <dustinschau@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "awesome-typescript-loader": "^2.1.1",
     "babel-loader": "^6.2.4",
     "babel-plugin-angularjs-annotate": "^0.4.0",
     "babel-plugin-transform-object-assign": "^6.8.0",
@@ -27,6 +28,7 @@
     "html-loader": "^0.4.3",
     "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
+    "typescript": "^1.8.10",
     "url-loader": "^0.5.7",
     "webpack": "^2.1.0-beta.20",
     "webpack-dev-server": "^2.1.0-beta.0",

@@ -38,6 +38,15 @@ module.exports = {
         loaders: ['babel']
       },
       {
+        test: /\.ts$/,
+        include: path.join(__dirname, 'src'),
+        exclude: [
+          /.*(spec|mock)\.js$/,
+          /node_modules/
+        ],
+        loaders: ['awesome-typescript']
+      },
+      {
         test: /\.html$/,
         include: path.join(__dirname, 'src'),
         exclude: [
@@ -59,5 +68,8 @@ module.exports = {
         }
       }
     ]
+  },
+  resolve: {
+    extensions: ['', '.ts', '.js']
   }
 };

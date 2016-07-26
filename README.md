@@ -1,6 +1,8 @@
-# angular-simple-webpack-boilerplate
+# angular-simple-webpack-boilerplate (Typescript)
 
 A simple angular (1.x) webpack boilerplate without a lot of the cruft of other boilerplates.
+
+_Note this is not currently working_
 
 ## Features
 
