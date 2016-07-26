@@ -25,6 +25,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.NoErrorsPlugin(),
     new webpack.optimize.DedupePlugin(),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({

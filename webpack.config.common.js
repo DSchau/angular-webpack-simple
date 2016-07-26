@@ -20,7 +20,6 @@ module.exports = {
       inject: true,
       template: 'src/index.html'
     }),
-    new webpack.NoErrorsPlugin(),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
       minChunks: Infinity,
