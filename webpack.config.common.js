@@ -6,8 +6,7 @@ const WebpackHtmlPlugin = require('webpack-html-plugin');
 
 module.exports = {
   entry: {
-    vendor: Object.keys(pkg.dependencies)
-      .filter((dependency) => !dependency.match(/\.css/)),
+    vendor: Object.keys(pkg.dependencies), // note, angular dependencies have to come first
     [pkg.name]: './src/index'
   },
   output: {
