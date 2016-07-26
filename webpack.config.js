@@ -5,11 +5,7 @@ module.exports = function(env) {
   'use strict';
   let webpackConfig = {};
 
-  if ( env && env.prod ) {
-    webpackConfig = require('./webpack.config.prod');
-  } else {
-    webpackConfig = require('./webpack.config.dev');
-  }
+  const webpackEnv = env && env.prod && 'prod' || 'dev';
 
-  return merge.smart(require('./webpack.config.common'), webpackConfig);
+  return merge.smart(require('./webpack.config.common'), require(`./webpack.config.${webpackEnv}`));
 };
